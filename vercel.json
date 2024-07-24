@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "https://apis.data.go.kr/1371000/policyNewsService/policyNewsList",
+      "destination": "https://apis.data.go.kr/1371000/policyNewsService/policyNewsList"
+    }
+  ]
+}
