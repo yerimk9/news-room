@@ -26,7 +26,7 @@ function Footer() {
         />
       </button>
       <div className="footer-copyright">
-        <p>Copyright © Livesense Inc.</p>
+        <p>Copyright © NEWS LIST.</p>
       </div>
       <div className="footer-logo">
         <Link className="footer-logo__a" href={"/"}>
@@ -36,13 +36,6 @@ function Footer() {
             width={50}
             height={50}
             className="footer-logo__img footer-logo__img--pc"
-          />
-          <Image
-            src={footer2}
-            alt="foot2"
-            width={50}
-            height={50}
-            className="footer-logo__img footer-logo__img--sp"
           />
         </Link>
       </div>

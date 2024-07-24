@@ -1366,16 +1366,13 @@ a {
   fill: #fff;
   transition: opacity 0.4s ease-in-out;
 }
-.footer.footer--home .footer-logo .footer-logo__a .footer-logo__img.footer-logo__img--sp {
-  display: none;
-}
 
 @media all and (max-width: 768px) {
   .footer.footer--home .footer-pagetop {
     top: -30px;
   }
   .footer.footer--home .footer-copyright {
-    font-size: 10px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
   }
   .footer.footer--home .footer-logo .footer-logo__a {
@@ -1383,18 +1380,12 @@ a {
     top: auto;
     left: auto;
     width: 100%;
-    height: 160px;
+    height: 0;
     border-radius: 0;
     box-shadow: 0 5px 18px 2px rgba(174, 198, 198, 0.3);
   }
   .footer.footer--home .footer-logo .footer-logo__a .footer-logo__img--pc {
     display: none !important; /* 추가: 다른 스타일에 의해 덮어쓰이는 것을 방지 */
-  }
-  .footer.footer--home .footer-logo .footer-logo__a .footer-logo__img--sp {
-    display: block !important; /* 추가: 다른 스타일에 의해 덮어쓰이는 것을 방지 */
-    top: 50px;
-    width: 105px;
-    height: 100px;
   }
 }
 .modal {

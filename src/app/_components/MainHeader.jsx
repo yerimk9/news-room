@@ -8,8 +8,6 @@ import AnalogClock from "./AnalogClock";
 import Modal from "./Modal";
 import mock from "../data/mock.json";
 import logo_black from "../../../public/svgs/logo_black.svg";
-import happy from "../../../public/pngs/happy.png";
-import gsap from "gsap";
 
 function MainHeader() {
   const [date, setDate] = useState({
