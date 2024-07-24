@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import _ from "lodash";
 import gsap from "gsap";
 import Image from "next/image";
-import mock from "../data/mock.json";
 
 function Header(props) {
   const [navVisible, setNavVisible] = useState(false);
@@ -127,23 +126,12 @@ function Header(props) {
               <div className="gnav-menu-toc">
                 <p className="gnav-menu-toc__all">
                   <Link href="/newslist" className="gnav-menu-toc__a">
-                    NEWS LIST
+                    기사 목록
                   </Link>
                 </p>
-                <p className="gnav-menu-toc__section">지역신문</p>
+                <p className="gnav-menu-toc__section">작가</p>
                 <ul className="gnav-menu-toc__ul">
-                   {mock["mediaList"].map((item, i) => (
-                    <li key={item.name} className="gnav-menu-toc__item">
-                      <Link
-                        href={item.linkUrl}
-                        className="gnav-menu-toc__a"
-                        target="_blank"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                  {/* <li className="gnav-menu-toc__item">
+                  <li className="gnav-menu-toc__item">
                     <Link href="/" className="gnav-menu-toc__a">
                       니스비 마리에
                     </Link>
@@ -167,7 +155,7 @@ function Header(props) {
                     <Link href="/" className="gnav-menu-toc__a">
                       니스비 마리에
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>

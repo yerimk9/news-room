@@ -33,7 +33,8 @@
         display: block;
         width: 100%;
         height: 1px;
-        border: 1px solid #c0c2c5;
+        // border: 1px solid #c0c2c5;
+        border: 1px solid $border-color1;
         border-width: 1px 0 0 0;
         margin: 20px 0;
       }

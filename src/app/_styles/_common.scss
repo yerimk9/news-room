@@ -5,7 +5,7 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   background-color: $primary-color1;
-  border: 1px solid #000;
+  border: 1px solid $border-color1;
   border-radius: min(2lvw, 40px);
   transition: all 0.3s;
 
