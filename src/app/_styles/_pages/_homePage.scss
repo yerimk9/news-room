@@ -1,6 +1,6 @@
 .video-container {
-width: 100% !important;
-height: 700px;
+  width: 100% !important;
+  height: 700px;
 
   .video {
     position: fixed;
@@ -21,7 +21,7 @@ height: 700px;
   }
 
   .border-container {
-    border: 50px solid #f2eddf;
+    border: 50px solid $primary-color1;
     border-width: 50px 50px 150px 50px;
     .content-container {
       width: 100%;
@@ -34,7 +34,7 @@ height: 700px;
 @media all and (max-width: 768px) {
   .video-container {
     .border-container {
-      border: 16px solid #f2eddf;
+      border: 16px solid $primary-color1;
     }
   }
 }

@@ -3,7 +3,7 @@
   margin: 50px 0 0;
   color: #fff;
   text-align: center;
-  background-color: #f2eddf;
+  background-color: $primary-color1;
   width: 100%;
 
   &.footer--home {
@@ -20,7 +20,7 @@
       background-color: #fff;
       border: none;
       border-radius: 50%;
-      box-shadow: 0 1px 3px rgb(70 72 73 / 0.2);
+      box-shadow: 0 1px 3px rgba(174, 198, 198, 0.2);
       transition: background 0.4s ease-in-out, transform 0.2s ease-in-out;
       transform: scale(1);
 
@@ -31,7 +31,7 @@
         width: 21px;
         height: 13px;
         margin: auto;
-        fill: #1ba2e6;
+        fill: $primary-color2;
         transition: fill 0.4s ease-in-out;
       }
     }
@@ -42,8 +42,8 @@
       font-family: Roboto, sans-serif;
       font-size: 1.5rem;
       line-height: 2.222;
-      background-color: #1ba1e6;
-      box-shadow: 0 5px 18px 2px rgb(27 161 230 / 0.6);
+      background-color: $primary-color2;
+      box-shadow: 0 5px 18px 2px rgba(174, 198, 198, 0.6);
     }
 
     .footer-logo {
@@ -59,9 +59,10 @@
         display: block;
         width: 100px;
         height: 100px;
-        background-color: #1ba1e6;
+        background-color: $primary-color2;
         border-radius: 50%;
-        box-shadow: 0 5px 18px rgb(9 46 73 / 0.4);
+        box-shadow: 0 5px 18px rgb(9 46 73 / 0.2);
+
         transition: background 0.4s ease-in-out, transform 0.2s ease-in-out;
 
         .footer-logo__img {
@@ -103,7 +104,7 @@
           width: 100%;
           height: 160px;
           border-radius: 0;
-          box-shadow: 0 5px 18px 2px rgb(27 161 230 / 0.3);
+          box-shadow: 0 5px 18px 2px rgba(174, 198, 198, 0.3);
 
           .footer-logo__img--pc {
             display: none !important; /* 추가: 다른 스타일에 의해 덮어쓰이는 것을 방지 */

@@ -1,5 +1,4 @@
 "use client";
-import AnalogClock from "@/app/_components/AnalogClock";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import Loading from "@/app/_components/Loading";

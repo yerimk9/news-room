@@ -12,8 +12,6 @@ export default async function Home() {
     <div className="video-container">
       <video autoPlay loop muted className="video">
         <source
-          // src="https://q.livesense.co.jp/images/index/bg-video.mp4"
-          // src="https://cdn.pixabay.com/video/2023/07/04/170043-842720124_tiny.mp4"
           src="https://cdn.pixabay.com/video/2021/12/06/99856-658707374_tiny.mp4"
           type="video/mp4"
         />

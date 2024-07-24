@@ -26,7 +26,7 @@
 
               margin: auto;
               height: fit-content;
-              background-color: #f2eddf;
+              background-color: $primary-color1;
               border: 1px solid #000;
               border-radius: min(2lvw, 40px);
 
@@ -38,9 +38,9 @@
               padding-top: min(4.2vw, 50px);
               padding-bottom: min(4.2vw, 50px);
 
-                &:hover {
-    transform: scale(.9);
-  }
+              &:hover {
+                transform: scale(0.9);
+              }
 
               p {
                 margin: 10px;
@@ -101,7 +101,7 @@
                 font-size: min(3vw, 30px);
                 font-weight: 700;
                 color: #000;
-                background-color: #f2eddf;
+                background-color: $primary-color1;
                 border: 1px solid #000;
                 border-radius: min(2lvw, 40px);
                 transition: all 0.3s;
@@ -119,8 +119,8 @@
             display: flex;
             padding: 3.5rem;
             margin-top: 10rem;
-            background-color: #f2eddf;
-            border: 1px solid #000;
+            background-color: $primary-color2;
+            // border: 1px solid #000;
             border-radius: min(5lvw, 40px);
             position: relative; /* position 값 추가 */
             text-align: center;

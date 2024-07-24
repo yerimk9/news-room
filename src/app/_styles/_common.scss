@@ -4,13 +4,13 @@
   justify-content: center;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-color: #f2eddf;
+  background-color: $primary-color1;
   border: 1px solid #000;
   border-radius: min(2lvw, 40px);
   transition: all 0.3s;
 
   &:hover {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 }
 
