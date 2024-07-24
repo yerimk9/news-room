@@ -76,7 +76,7 @@ function MainHeader() {
             <div className="gnav-menu__box">
               <div className="gnav-menu-toc">
                 <p className="gnav-menu-toc__all">
-                  <Link href="/newslist" className="text-xl font-semibold">
+                  <Link href="/newslist" className="gnav-menu-toc__a">
                     NEWS LIST
                   </Link>
                 </p>
