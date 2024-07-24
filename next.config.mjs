@@ -42,12 +42,11 @@ const nextConfig = {
         pathname: "/**",
       },
       {
-        protocol: "http",
-        hostname: "www.kwangju.co.kr",
+        protocol: "https",
+        hostname: "cdn.jjan.kr",
         port: "",
         pathname: "/**",
       },
-      //
       {
         protocol: "https",
         hostname: "logo-resources.thevc.kr",
