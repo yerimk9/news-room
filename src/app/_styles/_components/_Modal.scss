@@ -43,7 +43,7 @@
       background-position: top;
       background-size: cover;
 
-      &::before {
+      /*       &::before {
         position: absolute;
         top: -30px;
         right: -54px;
@@ -57,7 +57,7 @@
         left: -50px;
         z-index: 1;
         content: url("https://q.livesense.co.jp/images/common/frog_after.png");
-      }
+      } */
 
       .modal__content {
         position: relative;

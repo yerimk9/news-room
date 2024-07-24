@@ -5,6 +5,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import loadPage from "../_utils/loadPage";
 import Modal from "./Modal";
 import mock from "../data/mock.json";
+import logo_black from "../../../public/svgs/logo_black.svg";
 
 function Main({ newsItems }) {
   const ref = useRef(); // 기사를 담을 영역의 참조
@@ -68,7 +69,7 @@ function Main({ newsItems }) {
     <main ref={mainRef}>
       <div className="main-left">
         <Link href={"/"} className="c-square">
-          <div className="c-square__inner">
+          <div className="">
             <p className="c-square__title">Message</p>
             <p className="c-square__sub-title">메시지</p>
             <div className="c-circle-image">
@@ -82,7 +83,7 @@ function Main({ newsItems }) {
           </div>
         </Link>
         <Link href={"/"} className="c-square">
-          <div className="c-square__inner">
+          <div className="">
             <p className="c-square__title">Message</p>
             <div className="c-circle-image">
               <Image
@@ -126,15 +127,16 @@ function Main({ newsItems }) {
       </div>
 
       <div className="main-right">
-        <div className="c-square c-square--whats-qby" onClick={toggleModal}>
-          <div className="c-square__inner">
+        <div className="c-square c-square--whats-qby " onClick={toggleModal}>
+          <div className="flex flex-col items-center justify-center">
             <Image
-              src={"https://q.livesense.co.jp/images/index/whats_qby.svg"}
+              src={logo_black}
               alt="d"
               width={138}
               height={138}
-              className="whats-qby"
+              className="whats-qby "
             />
+            <div className="mt-[-5px]">Introduction</div>
           </div>
         </div>
 
@@ -146,17 +148,13 @@ function Main({ newsItems }) {
             target="_blank"
           >
             <div className="c-square__inner">
-              {/* <p className="c-square__writer-title">지역신문</p> */}
-              <div className="c-circle-image">
-                <Image
-                  src={item.imgUrl}
-                  alt={item.name}
-                  width={70}
-                  height={70}
-                  className="c-circle-image__img bg-white"
-                />
-              </div>
-              <p className="c-square__writer-name">{item.name}</p>
+              <Image
+                src={item.imgUrl}
+                alt={item.name}
+                width={70}
+                height={70}
+                className="w-[64%]"
+              />
             </div>
           </Link>
         ))}

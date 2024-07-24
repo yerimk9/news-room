@@ -168,6 +168,7 @@ a {
 }
 
 .c-square--whats-qby {
+  margin-top: 2.2%;
   margin-bottom: 50%;
 }
 
@@ -177,7 +178,10 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: min(2lvw, 40px);
 }
 
 .c-square__title {
@@ -207,15 +211,6 @@ a {
   text-align: center;
 }
 
-.c-square__writer-name {
-  width: 100%;
-  margin: 0;
-  font-size: min(1.5vw, 1.5rem);
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
 .c-circle-image {
   width: 60%;
   margin: 0 auto;
@@ -239,6 +234,10 @@ a {
   margin: auto;
 }
 
+.wA {
+  width: auto !important;
+}
+
 .video-container .border-container .content-container header {
   display: flex;
   justify-content: space-between;
@@ -259,7 +258,7 @@ a {
   color: #fff;
   font-display: swap;
   visibility: hidden;
-  background: #222;
+  background: #aec6c6;
   opacity: 0;
   transition-timing-function: ease-out;
   transition-duration: 0.2s;
@@ -444,7 +443,7 @@ a {
 }
 .video-container .border-container .content-container header .header-center .header-center__logo_text {
   position: absolute;
-  width: 100%;
+  width: max-content;
   left: 60%;
   bottom: 30px;
   transform: translateY(20px);
@@ -471,6 +470,9 @@ a {
   border: 1px solid #c0c2c5;
   border-radius: min(2lvw, 40px);
   transition: all 0.3s;
+}
+.video-container .border-container .content-container header .header-right .header-icon:not(:nth-child(4)) {
+  background-color: #fff;
 }
 .video-container .border-container .content-container header .header-right .header-icon:hover {
   transform: scale(0.9);
@@ -586,29 +588,6 @@ a {
   line-height: 2;
 }
 
-/* @media all and (max-width: 1100px) {
-  .video-container {
-    .border-container {
-      .content-container {
-        .header {
-          .header-center {
-            .header-center__logo {
-              width: 100%;
-            }
-            .header-center__logo_text {
-              position: absolute;
-              right: -30px;
-              bottom: 15px !important;
-              font-size: 40px;
-              font-weight: bold;
-              color: #222 !important; // !important 사용이 필요할 수 있습니다.
-            }
-          }
-        }
-      }
-    }
-  }
-} */
 @media all and (max-width: 768px) {
   .video-container .border-container .content-container header {
     display: initial;
@@ -623,6 +602,12 @@ a {
     border: none !important;
     outline: none;
     display: inline-flex !important;
+  }
+  .video-container .border-container .content-container header .gnav .gnav-wrapper .gnav-menu {
+    margin: 0 30px;
+  }
+  .video-container .border-container .content-container header .gnav .gnav-wrapper .gnav-menu .gnav-menu__box .gnav-menu-toc .gnav-menu-toc__ul .gnav-menu-toc__item {
+    margin-bottom: 30px;
   }
   .video-container .border-container .content-container header .header-left {
     justify-content: space-between;
@@ -704,10 +689,11 @@ a {
   }
   .video-container .border-container .content-container header .header-center .header-center__logo {
     width: 300px !important;
+    top: -30px !important;
   }
   .video-container .border-container .content-container header .header-center .header-center__logo_text {
     left: 20%;
-    bottom: -20px;
+    bottom: 0;
     transform: translateY(20px);
     font-size: 30px;
   }
@@ -793,11 +779,6 @@ a {
   left: 10px;
   width: 200px;
   height: 200px;
-  background-image: url("https://q.livesense.co.jp/images/common/logo_frog.png");
-  background-repeat: no-repeat;
-  background-position-y: top;
-  background-clip: content-box;
-  background-size: cover;
   transition: all 0.4s;
   will-change: transform;
 }
@@ -811,10 +792,15 @@ a {
   backface-visibility: hidden;
   transition: opacity 0.6s; /* opacity 변화에 대한 전환 효과 */
 }
+.header .logo .logo__title .logo__a .logo__image__text {
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
 .header .logo .logo__frog-a .logo__image {
   position: absolute;
-  top: 0;
-  left: -7px;
+  top: 20px;
+  left: 10px;
   display: inline-block;
   width: 830px;
   height: auto;
@@ -916,7 +902,7 @@ a {
   color: #fff;
   font-display: swap;
   visibility: hidden;
-  background: #222;
+  background: #aec6c6;
   opacity: 0;
   transition-timing-function: ease-out;
   transition-duration: 0.2s;
@@ -986,6 +972,11 @@ a {
     width: 68vw;
     height: auto;
   }
+  .header .logo .logo__title .logo__a .logo__image__text {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 10px;
+  }
   .header .burger-button {
     top: 0 !important;
     right: 0 !important;
@@ -1009,11 +1000,17 @@ a {
   }
   .header .logo .logo__title {
     top: 4vw !important;
-    left: 14vw !important;
+    left: 26vw !important;
+    max-width: max-content;
   }
   .header .logo .logo__title .logo__image {
     left: -3.3vw;
     width: 64vw;
+  }
+  .header .logo .logo__title .logo__a .logo__image__text {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 7px;
   }
   .header .burger-button {
     top: 0;
@@ -1044,6 +1041,9 @@ a {
     left: 8vw;
     width: 10vw;
   }
+  .header .gnav .gnav-wrapper .gnav-menu {
+    margin: 0 30px;
+  }
   .header .gnav .gnav-wrapper .gnav-menu .gnav-menu-title {
     height: 15vw;
     padding: 0 0 3vw;
@@ -1052,6 +1052,9 @@ a {
   .header .gnav .gnav-wrapper .gnav-menu .gnav-menu-title .gnav-menu-title__img {
     max-width: 50vw;
     height: auto;
+  }
+  .header .gnav .gnav-wrapper .gnav-menu .gnav-menu__box .gnav-menu-toc .gnav-menu-toc__ul .gnav-menu-toc__item {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-height: 480px) {
@@ -1439,20 +1442,21 @@ a {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-}
-.modal .modal__middle .modal__inner::before {
-  position: absolute;
-  top: -30px;
-  right: -54px;
-  z-index: 1;
-  content: url("https://q.livesense.co.jp/images/common/frog_before.png");
-}
-.modal .modal__middle .modal__inner::after {
-  position: absolute;
-  bottom: -52px;
-  left: -50px;
-  z-index: 1;
-  content: url("https://q.livesense.co.jp/images/common/frog_after.png");
+  /*       &::before {
+    position: absolute;
+    top: -30px;
+    right: -54px;
+    z-index: 1;
+    content: url("https://q.livesense.co.jp/images/common/frog_before.png");
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -52px;
+    left: -50px;
+    z-index: 1;
+    content: url("https://q.livesense.co.jp/images/common/frog_after.png");
+  } */
 }
 .modal .modal__middle .modal__inner .modal__content {
   position: relative;

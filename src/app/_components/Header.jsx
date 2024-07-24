@@ -3,7 +3,9 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import _ from "lodash";
 import gsap from "gsap";
+import mock from "../data/mock.json";
 import Image from "next/image";
+import logo_black from "../../../public/svgs/logo_black.svg";
 
 function Header(props) {
   const [navVisible, setNavVisible] = useState(false);
@@ -52,8 +54,8 @@ function Header(props) {
           gsap.to(headerLogoEl, {
             width: "110px",
             height: "110px",
-            top: "30px",
-            left: "30px",
+            top: "24px",
+            left: "14px",
             duration: 0.1,
             ease: "power2.out",
           });
@@ -74,16 +76,25 @@ function Header(props) {
     <header className="header">
       <button className="logo" aria-label="사이트 틉으로">
         <div className="logo__frog">
-          <Link href="/" className="logo__frog-a"></Link>
+          <Link href="/" className="logo__frog-a">
+            <Image
+              src={logo_black}
+              alt="Q by Livesense"
+              width={1674}
+              height={96}
+              className="logo__image"
+            />
+          </Link>
           <div className="logo__title">
             <Link href="/" className="logo__a">
-              <Image
+              {/*  <Image
                 src="https://q.livesense.co.jp/images/common/logo_title.png"
                 alt="Q by Livesense"
                 width={1674}
                 height={96}
                 className="logo__image"
-              />
+              /> */}
+              <div className="logo__image__text">NEWS LIST</div>
             </Link>
           </div>
         </div>
@@ -126,36 +137,22 @@ function Header(props) {
               <div className="gnav-menu-toc">
                 <p className="gnav-menu-toc__all">
                   <Link href="/newslist" className="gnav-menu-toc__a">
-                    기사 목록
+                    NEWS LIST
                   </Link>
                 </p>
-                <p className="gnav-menu-toc__section">작가</p>
+                <p className="gnav-menu-toc__section">지역 신문</p>
                 <ul className="gnav-menu-toc__ul">
-                  <li className="gnav-menu-toc__item">
-                    <Link href="/" className="gnav-menu-toc__a">
-                      니스비 마리에
-                    </Link>
-                  </li>
-                  <li className="gnav-menu-toc__item">
-                    <Link href="/" className="gnav-menu-toc__a">
-                      니스비 마리에
-                    </Link>
-                  </li>
-                  <li className="gnav-menu-toc__item">
-                    <Link href="/" className="gnav-menu-toc__a">
-                      니스비 마리에
-                    </Link>
-                  </li>
-                  <li className="gnav-menu-toc__item">
-                    <Link href="/" className="gnav-menu-toc__a">
-                      니스비 마리에
-                    </Link>
-                  </li>
-                  <li className="gnav-menu-toc__item">
-                    <Link href="/" className="gnav-menu-toc__a">
-                      니스비 마리에
-                    </Link>
-                  </li>
+                  {mock["mediaList"].map((item, i) => (
+                    <li key={item.name} className="gnav-menu-toc__item">
+                      <Link
+                        href={item.linkUrl}
+                        className="gnav-menu-toc__a"
+                        target="_blank"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

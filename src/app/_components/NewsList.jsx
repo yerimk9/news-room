@@ -28,7 +28,6 @@ function NewsList({ newsItems }) {
     <main className="main main-list">
       <div className="main-list__content">
         <div className="toc">
-          <h1>NEWS LIST</h1>
           {groupedNewsItems.map((group, groupIndex) => (
             <React.Fragment key={groupIndex}>
               {group.map((newsItem, i) => (

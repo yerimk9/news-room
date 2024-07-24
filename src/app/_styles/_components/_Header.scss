@@ -26,12 +26,6 @@
       left: 10px;
       width: 200px;
       height: 200px;
-
-      background-image: url("https://q.livesense.co.jp/images/common/logo_frog.png");
-      background-repeat: no-repeat;
-      background-position-y: top;
-      background-clip: content-box;
-      background-size: cover;
       transition: all 0.4s;
       will-change: transform;
     }
@@ -46,13 +40,21 @@
       backface-visibility: hidden;
 
       transition: opacity 0.6s; /* opacity 변화에 대한 전환 효과 */
+
+      .logo__a {
+        .logo__image__text {
+          font-size: 80px;
+          font-weight: 800;
+          letter-spacing: 10px;
+        }
+      }
     }
 
     .logo__frog-a {
       .logo__image {
         position: absolute;
-        top: 0;
-        left: -7px;
+        top: 20px;
+        left: 10px;
         display: inline-block;
         width: 830px;
         height: auto;
@@ -172,7 +174,7 @@
   color: #fff;
   font-display: swap;
   visibility: hidden;
-  background: #222;
+  background: $primary-color2;
   opacity: 0;
   transition-timing-function: ease-out;
   transition-duration: 0.2s;
@@ -210,8 +212,8 @@
           line-height: 1;
 
           a {
-                      color: #fff;
-                    }
+            color: #fff;
+          }
         }
 
         .gnav-menu-toc__section {
@@ -230,9 +232,9 @@
             margin-right: 60px;
             list-style: none;
 
-           a {
-            color: #fff;
-           }
+            a {
+              color: #fff;
+            }
           }
         }
       }
@@ -256,6 +258,14 @@
           left: -2.5vw;
           width: 68vw;
           height: auto;
+        }
+
+        .logo__a {
+          .logo__image__text {
+            font-size: 50px;
+            font-weight: 800;
+            letter-spacing: 10px;
+          }
         }
       }
     }
@@ -289,10 +299,19 @@
       }
       .logo__title {
         top: 4vw !important;
-        left: 14vw !important;
+        left: 26vw !important;
+        max-width: max-content;
         .logo__image {
           left: -3.3vw;
           width: 64vw;
+        }
+
+        .logo__a {
+          .logo__image__text {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: 7px;
+          }
         }
       }
     }
@@ -335,6 +354,7 @@
     .gnav {
       .gnav-wrapper {
         .gnav-menu {
+          margin: 0 30px;
           .gnav-menu-title {
             height: 15vw;
             padding: 0 0 3vw;
@@ -342,6 +362,16 @@
             .gnav-menu-title__img {
               max-width: 50vw;
               height: auto;
+            }
+          }
+
+          .gnav-menu__box {
+            .gnav-menu-toc {
+              .gnav-menu-toc__ul {
+                .gnav-menu-toc__item {
+                  margin-bottom: 30px;
+                }
+              }
             }
           }
         }

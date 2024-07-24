@@ -2,11 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import logoImg from "../../../public/svgs/logo.svg";
+import logo_white from "../../../public/svgs/logo_white.svg";
 import button from "../../../public/svgs/button.svg";
 import AnalogClock from "./AnalogClock";
 import Modal from "./Modal";
 import mock from "../data/mock.json";
+import logo_black from "../../../public/svgs/logo_black.svg";
 
 function MainHeader() {
   const [date, setDate] = useState({
@@ -75,7 +76,7 @@ function MainHeader() {
             <div className="gnav-menu__box">
               <div className="gnav-menu-toc">
                 <p className="gnav-menu-toc__all">
-                  <Link href="/newslist" className="gnav-menu-toc__a">
+                  <Link href="/newslist" className="text-xl font-semibold">
                     NEWS LIST
                   </Link>
                 </p>
@@ -120,18 +121,7 @@ function MainHeader() {
 
       <div className="header-left">
         <Link href="/newslist" className="c-square sp-hidden">
-          <div className="c-square__inner">
-            <p className="c-square__title">All articles</p>
-            <p className="c-square__sub-title">기사 목록</p>
-            <div className="c-circle-image">
-              <Image
-                src="https://q.livesense.co.jp/images/index/articles.png"
-                alt="기사 목록"
-                width={100}
-                height={100}
-              />
-            </div>
-          </div>
+          <p className="text-xl font-semibold">NEWS LIST</p>
         </Link>
 
         <div className="date-area">
@@ -145,7 +135,7 @@ function MainHeader() {
         </div>
 
         <div className="image-area sp-hidden">
-          <div className="image-area__bg"></div>
+          <div className="image-area__bg "></div>
         </div>
 
         <div className="header-tile-sp pc-hidden"></div>
@@ -158,27 +148,28 @@ function MainHeader() {
           ></button>
 
           {/* 모달 열기 */}
-          <div
-            className="image-area image-area--whats-qby frog-modal"
+          <button
+            className="c-square c-square--whats-qby wA"
             onClick={toggleModal}
           >
-            <div className="image-area__inner">
+            <div className="flex flex-col items-center justify-center">
               <Image
-                className="whats-qby"
-                src="https://q.livesense.co.jp/images/index/whats_qby.svg"
-                alt=""
-                width={114}
-                height={114}
+                src={logo_black}
+                alt="d"
+                width={138}
+                height={138}
+                className="whats-qby "
               />
+              <div className="mt-[-5px]">Introduction</div>
             </div>
-          </div>
+          </button>
         </div>
       </div>
 
       <div className="header-center relative ">
         <div>
           <Image
-            src={logoImg}
+            src={logo_white}
             alt="logoImg"
             fill
             className="header-center__logo"
@@ -229,18 +220,18 @@ function MainHeader() {
       </div>
 
       <div className="header-nav-sp pc-hidden">
-        <Link className="header-nav-sp__a" href="#">
+        <button
+          onClick={toggleModal}
+          className="header-nav-sp__a"
+          type="button"
+        >
           <p className="header-nav-sp__text">
-            <span>What&apos;s Q by</span>
-            <br />
-            <span>LIVESENSE?</span>
+            <span>Introduction</span>
           </p>
-        </Link>
-        <Link className="header-nav-sp__a" href="/blog/">
+        </button>
+        <Link className="header-nav-sp__a" href="/newslist">
           <p className="header-nav-sp__text">
-            <span>All</span>
-            <br />
-            <span>articles</span>
+            <span>NEWS LIST</span>
           </p>
         </Link>
         <Link

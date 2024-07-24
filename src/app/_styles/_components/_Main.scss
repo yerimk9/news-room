@@ -23,7 +23,6 @@
 
               justify-content: center;
               width: 25%; /* 카드 너비 조정 */
-
               margin: auto;
               height: fit-content;
               background-color: $primary-color1;
@@ -121,7 +120,6 @@
             padding: 3.5rem;
             margin-top: 10rem;
             background-color: $primary-color2;
-            // border: 1px solid $border-color1;
             border-radius: min(5lvw, 40px);
             position: relative; /* position 값 추가 */
             text-align: center;
