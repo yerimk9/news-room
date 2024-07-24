@@ -70,8 +70,7 @@ function Main({ newsItems }) {
       <div className="main-left">
         <Link href={"/"} className="c-square">
           <div className="">
-            <p className="c-square__title">Message</p>
-            <p className="c-square__sub-title">메시지</p>
+            {/* <p className="c-square__title">Message</p> */}
             <div className="c-circle-image">
               <Image
                 src={"https://q.livesense.co.jp/images/index/messege.png"}
@@ -84,7 +83,7 @@ function Main({ newsItems }) {
         </Link>
         <Link href={"/"} className="c-square">
           <div className="">
-            <p className="c-square__title">Message</p>
+            {/* <p className="c-square__title">Message</p> */}
             <div className="c-circle-image">
               <Image
                 src={"https://q.livesense.co.jp/images/index/goods.png"}

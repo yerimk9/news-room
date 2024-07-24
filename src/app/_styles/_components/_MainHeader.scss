@@ -129,15 +129,6 @@
                 text-align: center;
               }
 
-              .c-square__sub-title {
-                width: 100%;
-                margin: 0;
-                font-size: max(0.5svw, 1rem);
-                font-weight: 700;
-                line-height: normal;
-                text-align: center;
-              }
-
               .c-circle-image {
                 width: 54%;
                 margin: 0 auto;
@@ -553,7 +544,6 @@
             div:first-child {
               width: 100%;
               height: 350px;
-              margin: 0 auto;
             }
             .header-center__logo {
               width: 300px !important;
