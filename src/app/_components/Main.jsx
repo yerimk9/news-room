@@ -6,6 +6,7 @@ import loadPage from "../_utils/loadPage";
 import Modal from "./Modal";
 import mock from "../data/mock.json";
 import logo_black from "../../../public/svgs/logo_black.svg";
+import img2 from "../../../public/pngs/IMG2.jpeg";
 
 function Main({ newsItems }) {
   const ref = useRef(); // 기사를 담을 영역의 참조
@@ -85,12 +86,7 @@ function Main({ newsItems }) {
           <div className="">
             {/* <p className="c-square__title">Message</p> */}
             <div className="c-circle-image">
-              <Image
-                src={"https://q.livesense.co.jp/images/index/goods.png"}
-                alt="d"
-                width={124}
-                height={124}
-              />
+              <Image src={img2} alt="IMG2" width={124} height={124} />
             </div>
           </div>
         </Link>
