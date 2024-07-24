@@ -1,0 +1,258 @@
+.video-container {
+  .border-container {
+    .content-container {
+      main {
+        display: flex;
+        position: relative;
+
+        .main-left {
+          width: 13.5%;
+        }
+
+        .main-center {
+          width: 73%;
+          padding-bottom: 11%;
+
+          .article-card-area {
+            width: 100%;
+            position: relative;
+
+            .c-article-card {
+              display: flex;
+              flex-direction: row-reverse;
+
+              justify-content: center;
+              width: 25%; /* 카드 너비 조정 */
+
+              margin: auto;
+              height: fit-content;
+              background-color: #f2eddf;
+              border: 1px solid #000;
+              border-radius: min(2lvw, 40px);
+
+              position: absolute;
+              transition: 0.3s;
+
+              transition-property: transform;
+
+              padding-top: min(4.2vw, 50px);
+              padding-bottom: min(4.2vw, 50px);
+
+                &:hover {
+    transform: scale(.9);
+  }
+
+              p {
+                margin: 10px;
+              }
+
+              .c-article-card__title {
+                position: relative;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 10px;
+                font-size: min(32px, 1.6svw);
+                font-weight: 700;
+                line-height: 2.5em;
+                align-self: flex-start;
+                writing-mode: vertical-lr;
+              }
+
+              .c-article-card__date {
+                // display: none;
+                margin: 0;
+                padding: 10px;
+                font-size: min(26px, 1.1svw);
+                font-weight: 700;
+                align-self: center;
+                justify-self: center;
+
+                position: absolute;
+                bottom: 20px;
+                left: 25px;
+              }
+            }
+          }
+
+          .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: min(6.5%, 85px);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+
+            ul.pagination {
+              display: flex;
+              width: 100%;
+              padding: 0;
+              margin: 0;
+
+              li.page-item {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                width: calc(100% / 8);
+                aspect-ratio: 1 / 1;
+                font-size: min(3vw, 30px);
+                font-weight: 700;
+                color: #000;
+                background-color: #f2eddf;
+                border: 1px solid #000;
+                border-radius: min(2lvw, 40px);
+                transition: all 0.3s;
+
+                &.active,
+                &:hover {
+                  background-color: #000;
+                  color: #fff;
+                }
+              }
+            }
+          }
+
+          .subscription {
+            display: flex;
+            padding: 3.5rem;
+            margin-top: 10rem;
+            background-color: #f2eddf;
+            border: 1px solid #000;
+            border-radius: min(5lvw, 40px);
+            position: relative; /* position 값 추가 */
+            text-align: center;
+
+            .subscription_text {
+              width: 100%;
+              font-size: min(1.2svw, 20px);
+
+              .subscription_title {
+                font-size: min(2svw, 40px);
+                font-weight: 700;
+                word-break: auto-phrase;
+              }
+
+              p {
+                margin-top: 0;
+                line-height: 2.3;
+              }
+            }
+          }
+        }
+
+        .main-right {
+          width: 13.5%;
+
+          .c-square {
+            &.c-square--whats-qby {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .video-container {
+    .border-container {
+      .content-container {
+        main {
+          margin: 3vw;
+          margin-bottom: 0;
+
+          .main-left {
+            display: none;
+          }
+
+          .main-center {
+            width: 100%;
+            padding-bottom: 35%;
+            margin: 0 auto;
+
+            .article-card-area {
+              .c-article-card__title {
+                font-size: 15px !important;
+              }
+
+              .c-article-card__date {
+                font-size: 10px !important;
+              }
+            }
+
+            .pagination {
+              ul.pagination {
+                li.page-item {
+                  width: 25%;
+                  font-size: max(8lvw, 2.5rem);
+                  border-radius: 20px;
+                }
+              }
+            }
+
+            .subscription {
+              padding: 3rem;
+              .subscription_text {
+                font-size: min(2svw, 14px);
+
+                .subscription_title {
+                  font-size: min(3svw, 20px);
+                }
+              }
+            }
+          }
+          .main-right {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 580px) {
+  .video-container {
+    .border-container {
+      .content-container {
+        main {
+          .main-center {
+            width: 100%;
+            padding-bottom: 35%;
+            margin: 0 auto;
+            .article-card-area {
+              .c-article-card {
+                width: 50% !important;
+                padding-top: max(8.2vw, 30px);
+                padding-bottom: max(8.2vw, 30px);
+                border-radius: 20px;
+
+                .c-article-card__title {
+                  font-size: 20px !important;
+                }
+
+                .c-article-card__date {
+                  font-size: 13px !important;
+                }
+              }
+            }
+            .subscription {
+              padding: 2rem;
+              margin-top: 30px;
+              .subscription_text {
+                font-size: min(3svw, 14px);
+
+                .subscription_title {
+                  font-size: min(4svw, 20px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

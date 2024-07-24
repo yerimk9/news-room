@@ -1,0 +1,587 @@
+.video-container {
+  .border-container {
+    .content-container {
+      header {
+        display: flex;
+        justify-content: space-between;
+
+        .gnav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 8;
+          display: block;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+          height: 0;
+          padding: 0;
+          margin: 0 auto;
+          font-family: "Noto Sans JP", sans-serif;
+          color: #fff;
+          font-display: swap;
+          visibility: hidden;
+          background: #222;
+          opacity: 0;
+          transition-timing-function: ease-out;
+          transition-duration: 0.2s;
+          transition-property: height, opacity;
+
+          .burger-button {
+            top: 0;
+            right: 0;
+          }
+
+          &.visible {
+            height: 100vh;
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .gnav-wrapper {
+            max-width: 1080px;
+            margin: 0 auto;
+
+            .gnav-menu {
+              margin: 0 30px;
+
+              .gnav-menu-title {
+                display: flex;
+                align-items: end;
+                height: 88px;
+                padding: 0 0 20px;
+                margin: 40px 150px 0 0;
+                border-bottom: #666 solid 2px;
+              }
+
+              .gnav-menu__box {
+                .gnav-menu-toc {
+                  .gnav-menu-toc__all {
+                    padding: 0;
+                    margin: 3rem 0 1rem;
+                    font-size: 2.2rem;
+                    line-height: 1;
+
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  .gnav-menu-toc__section {
+                    padding: 0;
+                    margin: 3rem 0 1rem;
+                    font-size: 1.8rem;
+                    color: #787878;
+                  }
+
+                  .gnav-menu-toc__ul {
+                    padding: 0;
+                    margin: 1.7rem 0;
+
+                    .gnav-menu-toc__item {
+                      display: inline-block;
+                      margin-right: 60px;
+                      list-style: none;
+
+                      a {
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // 왼쪽
+        .header-left {
+          z-index: 5;
+          display: flex;
+          flex-wrap: wrap;
+          width: 21.5%;
+          padding-bottom: 2.6%;
+
+          .c-square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 66.66%;
+            aspect-ratio: 1 / 1;
+            transition: all 0.3s;
+
+            .c-square__inner {
+              width: 100%;
+
+              .c-square__title {
+                width: 100%;
+                margin: 0;
+                font-size: min(1.4vw, 20px);
+                font-weight: 700;
+                line-height: normal;
+                text-align: center;
+              }
+
+              .c-square__sub-title {
+                width: 100%;
+                margin: 0;
+                font-size: max(0.5svw, 1rem);
+                font-weight: 700;
+                line-height: normal;
+                text-align: center;
+              }
+
+              .c-circle-image {
+                width: 54%;
+                margin: 0 auto;
+                margin-top: 5%;
+
+                img {
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+
+          .date-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 33.33%;
+            margin-top: 19.5%;
+            font-weight: 700;
+            text-align: center;
+
+            .date-area__month {
+              margin: 0;
+              font-size: min(0.78vw, 1.2rem);
+              line-height: 2;
+            }
+
+            .date-area__day {
+              margin: 0;
+              font-size: min(4vw, 40px);
+              line-height: min(4vw, 40px);
+            }
+
+            .date-area__year {
+              margin: 0;
+              font-size: min(0.73vw, 1.4rem);
+              line-height: 2;
+            }
+          }
+
+          .week-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 33.33%;
+            aspect-ratio: 1 / 1;
+
+            .week-area__week {
+              margin: 0;
+              font-size: min(2vw, 20px);
+              font-weight: 700;
+              text-transform: uppercase;
+              line-height: 2;
+            }
+          }
+
+          .image-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 66.66%;
+            background: #f2eddf;
+
+            &.image-area--whats-qby {
+              cursor: pointer;
+            }
+
+            .image-area__bg {
+              width: 70%;
+              height: 100%;
+              background-image: url("https://q.livesense.co.jp/images/index/qby_live.svg");
+              background-repeat: no-repeat;
+              background-position: 50%, 50%;
+              background-size: contain;
+            }
+          }
+
+          .header-tile-sp {
+            .burger-button-sp {
+              height: 20.5vw;
+            }
+            .whats-qby {
+              display: block;
+              width: 60%;
+              height: auto;
+              aspect-ratio: 1/ 1;
+              margin: auto;
+            }
+          }
+
+          & > * {
+            background-color: #f2eddf;
+            border: 1px solid #000;
+            border-radius: min(2lvw, 40px);
+          }
+        }
+
+        // 중앙
+        .header-center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 25%;
+          transform: translateX(16%);
+
+          .header-center__logo {
+            width: 100%;
+            fill: rgb(242, 237, 223);
+          }
+        }
+
+        // 오른쪽
+        .header-right {
+          z-index: 5;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          width: 28.6%;
+
+          .header-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:25%;
+            height: 25%;
+            aspect-ratio: 1 / 1;
+            margin: 10% 0 0;
+            background-color: #f2eddf;
+            border: 1px solid #000;
+            border-radius: min(2lvw, 40px);
+            transition: all 0.3s;
+
+              &:hover {
+    transform: scale(.9);
+  }
+
+           
+
+            .header-icon__box {
+              width: 50%;
+              height: 50%;
+              aspect-ratio: 1 / 1;
+              transition: all 0.3s;
+
+              .header-icon__img {
+                width: 100%;
+                height: 100%;
+                transition: all 0.3s;
+              }
+            }
+
+            .header-icon__box-x {
+              width: 80%;
+              height: 80%;
+            }
+          }
+          .burger-button-open {
+            margin: 0 0 10%;
+          }
+
+          .digitial-clock-sp__num {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            line-height: 2;
+          }
+
+          .analog-clock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            aspect-ratio: 1 / 1;
+            background-color: #f2eddf;
+            border: 1px solid #000;
+            border-radius: min(2lvw, 40px);
+
+            .analog-clock__case {
+              // width: 80%; // 72%
+              width: auto;
+              position: relative;
+              line-height: 0;
+
+              .analog-clock__frame {
+                display: inline-block;
+
+                .analog-clock__frame-img {
+                  max-width: 100%;
+                  border-style: none;
+                }
+              }
+
+              .analog-clock__hour {
+                position: absolute;
+                top: 26%;
+                right: 0;
+                left: 0;
+                height: 29.41176470588235%;
+                line-height: 0;
+                text-align: center;
+                transform-origin: 50% 82%;
+
+                .analog-clock__hour-img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                  max-width: 100%;
+                }
+              }
+
+              .analog-clock__min {
+                position: absolute;
+                top: 13%;
+                right: 0;
+                left: 0;
+                height: 43.31550802139037%;
+                line-height: 0;
+                text-align: center;
+                transform-origin: 50% 86%;
+
+                .analog-clock__min-img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                  max-width: 100%;
+                }
+              }
+
+              .analog-clock__sec {
+                position: absolute;
+                top: 4%;
+                right: 0;
+                left: 0;
+                height: 50.80213903743316%;
+                line-height: 0;
+                text-align: center;
+                transform-origin: 50% 91%;
+
+                .analog-clock__sec-img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+
+          .digital-clock-pc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: fit-content;
+            aspect-ratio: 1 / 1;
+
+            background-color: #f2eddf;
+            border: 1px solid #000;
+            border-radius: min(2lvw, 40px);
+
+            .digital-clock-pc__num {
+              margin: 0;
+              font-size: min(1vw, 15px);
+              font-weight: 700;
+              line-height: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1100px) {
+  .header {
+    .logo {
+      .gnav {
+        .burger-button {
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .video-container {
+    .border-container {
+      .content-container {
+        header {
+          display: initial;
+
+          & > * {
+            width: 100% !important;
+          }
+
+          .sp-hidden {
+            display: none !important;
+          }
+
+          .pc-hidden {
+            border: none !important;
+            outline: none;
+            display: inline-flex !important;
+          }
+
+          .header-left {
+            justify-content: space-between;
+            padding-bottom: 0;
+
+            .date-area {
+              width: 25%;
+              height: 100%;
+              padding: 4% 0;
+              margin: 0;
+
+              .date-area__month {
+                font-size: 2.67vw;
+              }
+
+              .date-area__day {
+                font-size: 12vw;
+                line-height: 11vw;
+              }
+
+              .date-area__year {
+                font-size: 2.67vw;
+              }
+            }
+
+            .week-area {
+              width: 25%;
+              height: fit-content;
+              aspect-ratio: initial;
+
+              .week-area__week {
+                font-size: 5.33vw;
+                line-height: 10vw;
+              }
+            }
+
+            .image-area {
+              width: 100%;
+              height: 20.5vw;
+              padding: 6px;
+              border: 1px solid #000;
+            }
+
+            .header-tile-sp {
+              width: 25%;
+              background: 0 0 !important;
+              border: none !important;
+              flex-direction: column;
+
+              .burger-button-sp {
+                height: 20.5vw !important;
+                margin: 0;
+                margin-left: 0;
+                background-color: #f2eddf !important;
+                background-position: 52% 55% !important;
+                background-size: 57% !important;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                background-image: url("https://q.livesense.co.jp/images/index/menu-sp.svg");
+                background-repeat: no-repeat;
+                border: 1px solid #000;
+              }
+              .image-area {
+                width: 100%;
+                height: 20.5vw;
+                padding: 6px;
+                border: 1px solid #000;
+              }
+
+              .image-area--whats-qby {
+                margin-top: 4px;
+                border-radius: min(2lvw, 40px);
+              }
+              .whats-qby {
+                width: 75%;
+              }
+            }
+          }
+
+          .header-right {
+            align-items: center;
+            justify-content: space-between;
+
+            .digital-clock-sp {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 25%;
+              height: fit-content;
+              background-color: #f2eddf;
+              border: 1px solid #000;
+              border-radius: min(2lvw, 40px);
+              .digital-clock-sp__num {
+                margin: 0;
+                font-size: 3.7vw;
+                font-weight: 700;
+                line-height: 10vw;
+              }
+            }
+
+            .analog-clock {
+              width: 25%;
+
+              .analog-clock__case {
+                width: 72%;
+              }
+            }
+          }
+          .header-nav-sp {
+            display: flex;
+            width: 100%;
+            margin-top: 8px;
+            border: 1px solid #000;
+
+            .header-nav-sp__a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 25%;
+              padding: 4.5% 0;
+              text-align: center;
+              background-color: #f2eddf;
+              border-right: 2px solid #000;
+
+              .header-nav-sp__text {
+                margin: 0;
+                font-size: 2.67vw;
+                font-weight: 700;
+                line-height: 3.5vw;
+              }
+
+              &:nth-child(n + 2) {
+                .header-nav-sp__text {
+                  font-size: 3.3vw;
+                }
+              }
+
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

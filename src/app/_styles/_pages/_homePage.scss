@@ -1,0 +1,40 @@
+.video-container {
+width: 100% !important;
+height: 700px;
+
+  .video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available !important;
+    height: -webkit-fill-available;
+    object-fit: fill;
+    z-index: -1;
+  }
+
+  .sp-hidden {
+    display: inherit;
+  }
+
+  .pc-hidden {
+    display: none !important;
+  }
+
+  .border-container {
+    border: 50px solid #f2eddf;
+    border-width: 50px 50px 150px 50px;
+    .content-container {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #000;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .video-container {
+    .border-container {
+      border: 16px solid #f2eddf;
+    }
+  }
+}

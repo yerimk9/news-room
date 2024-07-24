@@ -1,0 +1,17 @@
+@import "./reset";
+@import "./mixins";
+@import "./common";
+
+// components
+@import "./_components/MainHeader";
+@import "./_components/Header";
+@import "./_components/Main";
+@import "./_components/Footer";
+@import "./_components/Modal";
+@import "./_components/Loading";
+@import "./_components/NewsList";
+
+// pages
+@import "./_pages/homePage";
+@import "./_pages/newsItemPage";
+@import "./_pages/newsListPage";

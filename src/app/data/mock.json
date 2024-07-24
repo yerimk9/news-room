@@ -1,0 +1,47 @@
+{
+  "mediaList": [
+    {
+      "name": "서울일보",
+      "imgUrl": "https://cdn.seoulilbo.com/image/logo/toplogo_20240627094003.png",
+      "linkUrl": "https://www.seoulilbo.com/"
+    },
+    {
+      "name": "제주일보",
+      "imgUrl": "http://www.jejunews.com/image/logo/toplogo_20200715085407.png",
+      "linkUrl": "http://www.jejunews.com/"
+    },
+    {
+      "name": "부산일보",
+      "imgUrl": "https://www.busan.com/nas/wcms/public/pc/images/new/logo.png",
+      "linkUrl": "https://www.busan.com/"
+    },
+
+    {
+      "name": "대전일보",
+      "imgUrl": "https://cdn.daejonilbo.com/image/logo/toplogo_20220107040417.png",
+      "linkUrl": "https://www.daejonilbo.com/"
+    },
+    {
+      "name": "광주일보",
+      "imgUrl": "http://www.kwangju.co.kr/k_img/logo2.png",
+      "linkUrl": "http://m.kwangju.co.kr/"
+    }
+  ],
+  "mediaAssociations": [
+    {
+      "name": "한국언론진흥재단",
+      "imgUrl": "https://logo-resources.thevc.kr/products/200x200/9a09c1e81f41f8aae0218438bf718835db51d16678fb4db928e3b795e7169510_1673107761965731.jpg",
+      "linkUrl": "https://www.kpf.or.kr/front/user/main.do"
+    },
+    {
+      "name": "한국기자협회",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6IJld7GhL-6YOhqz6Z9LizD1PH-pF6CdWjg&s",
+      "linkUrl": "https://www.journalist.or.kr/"
+    },
+    {
+      "name": "한국인터넷신문협회",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3ZfRwjkCf7oTEoGrVJj3ZSXWnQCArcBQ7g&s",
+      "linkUrl": "https://kina.or.kr/"
+    }
+  ]
+}

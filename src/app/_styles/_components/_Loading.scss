@@ -1,0 +1,17 @@
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  p {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+}

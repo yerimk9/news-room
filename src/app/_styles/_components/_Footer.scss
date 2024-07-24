@@ -1,0 +1,122 @@
+.footer {
+  position: relative;
+  margin: 50px 0 0;
+  color: #fff;
+  text-align: center;
+  background-color: #f2eddf;
+  width: 100%;
+
+  &.footer--home {
+    margin: 0;
+
+    .footer-pagetop {
+      position: absolute;
+      top: -30px;
+      right: 60px;
+      z-index: 1;
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 1px 3px rgb(70 72 73 / 0.2);
+      transition: background 0.4s ease-in-out, transform 0.2s ease-in-out;
+      transform: scale(1);
+
+      .footer-pagetop__img {
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 21px;
+        height: 13px;
+        margin: auto;
+        fill: #1ba2e6;
+        transition: fill 0.4s ease-in-out;
+      }
+    }
+
+    .footer-copyright {
+      padding: 20px;
+      margin: 0;
+      font-family: Roboto, sans-serif;
+      font-size: 1.5rem;
+      line-height: 2.222;
+      background-color: #1ba1e6;
+      box-shadow: 0 5px 18px 2px rgb(27 161 230 / 0.6);
+    }
+
+    .footer-logo {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .footer-logo__a {
+        position: absolute;
+        top: -150px;
+        left: 60px;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: #1ba1e6;
+        border-radius: 50%;
+        box-shadow: 0 5px 18px rgb(9 46 73 / 0.4);
+        transition: background 0.4s ease-in-out, transform 0.2s ease-in-out;
+
+        .footer-logo__img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: block;
+          height: 50px;
+          fill: #fff;
+          transition: opacity 0.4s ease-in-out;
+
+          &.footer-logo__img--sp {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .footer {
+    &.footer--home {
+      .footer-pagetop {
+        top: -30px;
+      }
+
+      .footer-copyright {
+        font-size: 10px;
+        color: rgb(255 255 255 / 0.8);
+      }
+
+      .footer-logo {
+        .footer-logo__a {
+          position: relative;
+          top: auto;
+          left: auto;
+          width: 100%;
+          height: 160px;
+          border-radius: 0;
+          box-shadow: 0 5px 18px 2px rgb(27 161 230 / 0.3);
+
+          .footer-logo__img--pc {
+            display: none !important; /* 추가: 다른 스타일에 의해 덮어쓰이는 것을 방지 */
+          }
+
+          .footer-logo__img--sp {
+            display: block !important; /* 추가: 다른 스타일에 의해 덮어쓰이는 것을 방지 */
+            top: 50px;
+            width: 105px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
