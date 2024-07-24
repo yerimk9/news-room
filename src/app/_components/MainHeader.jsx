@@ -66,7 +66,6 @@ function MainHeader() {
     return () => clearInterval(intervalId);
   }, []);
 
-
   return (
     <header>
       <nav className={`gnav ${navVisible ? "visible" : ""}`}>
@@ -176,14 +175,16 @@ function MainHeader() {
         </div>
       </div>
 
-      <div className="header-center">
-         <Image
-          src={logoImg}
-          alt="logoImg"
-          fill
-          className="header-center__logo"
-        /> 
-       
+      <div className="header-center relative ">
+        <div>
+          <Image
+            src={logoImg}
+            alt="logoImg"
+            fill
+            className="header-center__logo"
+          />
+        </div>
+        <div className="header-center__logo_text">NEWS LIST</div>
       </div>
 
       <div className="header-right">

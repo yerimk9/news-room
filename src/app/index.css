@@ -159,7 +159,7 @@ a {
   width: 100%;
   aspect-ratio: 1/1;
   background-color: #edebeb;
-  border: 1px solid #ccc;
+  border: 1px solid #c0c2c5;
   border-radius: min(2lvw, 40px);
   transition: all 0.3s;
 }
@@ -427,7 +427,7 @@ a {
 }
 .video-container .border-container .content-container header .header-left > * {
   background-color: #edebeb;
-  border: 1px solid #ccc;
+  border: 1px solid #c0c2c5;
   border-radius: min(2lvw, 40px);
 }
 .video-container .border-container .content-container header .header-center {
@@ -436,10 +436,21 @@ a {
   justify-content: center;
   width: 25%;
   transform: translateX(16%);
+  position: relative;
 }
 .video-container .border-container .content-container header .header-center .header-center__logo {
   width: 100%;
   fill: rgb(242, 237, 223);
+}
+.video-container .border-container .content-container header .header-center .header-center__logo_text {
+  position: absolute;
+  width: 100%;
+  left: 60%;
+  bottom: 30px;
+  transform: translateY(20px);
+  font-size: 40px;
+  font-weight: bold;
+  color: #edebeb;
 }
 .video-container .border-container .content-container header .header-right {
   z-index: 5;
@@ -457,7 +468,7 @@ a {
   aspect-ratio: 1/1;
   margin: 10% 0 0;
   background-color: #edebeb;
-  border: 1px solid #ccc;
+  border: 1px solid #c0c2c5;
   border-radius: min(2lvw, 40px);
   transition: all 0.3s;
 }
@@ -494,7 +505,7 @@ a {
   width: 50%;
   aspect-ratio: 1/1;
   background-color: #edebeb;
-  border: 1px solid #ccc;
+  border: 1px solid #c0c2c5;
   border-radius: min(2lvw, 40px);
 }
 .video-container .border-container .content-container header .header-right .analog-clock .analog-clock__case {
@@ -565,7 +576,7 @@ a {
   height: fit-content;
   aspect-ratio: 1/1;
   background-color: #edebeb;
-  border: 1px solid #ccc;
+  border: 1px solid #c0c2c5;
   border-radius: min(2lvw, 40px);
 }
 .video-container .border-container .content-container header .header-right .digital-clock-pc .digital-clock-pc__num {
@@ -575,12 +586,29 @@ a {
   line-height: 2;
 }
 
-@media all and (max-width: 1100px) {
-  .header .logo .gnav .burger-button {
-    top: 0;
-    right: 0;
+/* @media all and (max-width: 1100px) {
+  .video-container {
+    .border-container {
+      .content-container {
+        .header {
+          .header-center {
+            .header-center__logo {
+              width: 100%;
+            }
+            .header-center__logo_text {
+              position: absolute;
+              right: -30px;
+              bottom: 15px !important;
+              font-size: 40px;
+              font-weight: bold;
+              color: #222 !important; // !important 사용이 필요할 수 있습니다.
+            }
+          }
+        }
+      }
+    }
   }
-}
+} */
 @media all and (max-width: 768px) {
   .video-container .border-container .content-container header {
     display: initial;
@@ -629,7 +657,7 @@ a {
     width: 100%;
     height: 20.5vw;
     padding: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid #c0c2c5;
   }
   .video-container .border-container .content-container header .header-left .header-tile-sp {
     width: 25%;
@@ -650,13 +678,13 @@ a {
     width: 100%;
     background-image: url("https://q.livesense.co.jp/images/index/menu-sp.svg");
     background-repeat: no-repeat;
-    border: 1px solid #ccc;
+    border: 1px solid #c0c2c5;
   }
   .video-container .border-container .content-container header .header-left .header-tile-sp .image-area {
     width: 100%;
     height: 20.5vw;
     padding: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid #c0c2c5;
   }
   .video-container .border-container .content-container header .header-left .header-tile-sp .image-area--whats-qby {
     margin-top: 4px;
@@ -664,6 +692,24 @@ a {
   }
   .video-container .border-container .content-container header .header-left .header-tile-sp .whats-qby {
     width: 75%;
+  }
+  .video-container .border-container .content-container header .header-center {
+    width: 100% !important;
+    max-height: 150px !important;
+  }
+  .video-container .border-container .content-container header .header-center div:first-child {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+  }
+  .video-container .border-container .content-container header .header-center .header-center__logo {
+    width: 300px !important;
+  }
+  .video-container .border-container .content-container header .header-center .header-center__logo_text {
+    left: 20%;
+    bottom: -20px;
+    transform: translateY(20px);
+    font-size: 30px;
   }
   .video-container .border-container .content-container header .header-right {
     align-items: center;
@@ -676,7 +722,7 @@ a {
     width: 25%;
     height: fit-content;
     background-color: #edebeb;
-    border: 1px solid #ccc;
+    border: 1px solid #c0c2c5;
     border-radius: min(2lvw, 40px);
   }
   .video-container .border-container .content-container header .header-right .digital-clock-sp .digital-clock-sp__num {
@@ -695,7 +741,7 @@ a {
     display: flex;
     width: 100%;
     margin-top: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #c0c2c5;
   }
   .video-container .border-container .content-container header .header-nav-sp .header-nav-sp__a {
     display: flex;
@@ -705,7 +751,7 @@ a {
     padding: 4.5% 0;
     text-align: center;
     background-color: #edebeb;
-    border-right: 2px solid #ccc;
+    border-right: 2px solid #c0c2c5;
   }
   .video-container .border-container .content-container header .header-nav-sp .header-nav-sp__a .header-nav-sp__text {
     margin: 0;
@@ -1079,7 +1125,7 @@ a {
   margin: auto;
   height: fit-content;
   background-color: #edebeb;
-  border: 1px solid #ccc;
+  border: 1px solid #c0c2c5;
   border-radius: min(2lvw, 40px);
   position: absolute;
   transition: 0.3s;
@@ -1143,13 +1189,14 @@ a {
   font-weight: 700;
   color: #000;
   background-color: #edebeb;
-  border: 1px solid #ccc;
+  border: 1px solid #c0c2c5;
   border-radius: min(2lvw, 40px);
   transition: all 0.3s;
 }
 .video-container .border-container .content-container main .main-center .pagination ul.pagination li.page-item.active, .video-container .border-container .content-container main .main-center .pagination ul.pagination li.page-item:hover {
   background-color: #000;
   color: #fff;
+  border: none;
 }
 .video-container .border-container .content-container main .main-center .subscription {
   display: flex;
@@ -1443,7 +1490,7 @@ a {
   padding: 13px 70px;
   margin-top: 0;
   font-weight: 500;
-  border: solid 1px #ccc;
+  border: solid 1px #c0c2c5;
 }
 
 @media only screen and (width <= 1100px) {
@@ -1711,7 +1758,7 @@ a {
   display: block;
   width: 100%;
   height: 1px;
-  border: 1px solid #ccc;
+  border: 1px solid #c0c2c5;
   border-width: 1px 0 0 0;
   margin: 20px 0;
 }

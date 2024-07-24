@@ -110,6 +110,7 @@
                 &:hover {
                   background-color: #000;
                   color: #fff;
+                  border: none;
                 }
               }
             }
@@ -124,6 +125,7 @@
             border-radius: min(5lvw, 40px);
             position: relative; /* position 값 추가 */
             text-align: center;
+            // color: #fff;
 
             .subscription_text {
               width: 100%;
