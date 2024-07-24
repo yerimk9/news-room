@@ -10,9 +10,7 @@
           top: 0;
           left: 0;
           z-index: 8;
-          display: block;
-          align-items: center;
-          justify-content: center;
+          @include flexCenter;
           width: 100vw;
           height: 0;
           padding: 0;
@@ -142,10 +140,7 @@
           }
 
           .date-area {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flex(center, center, column);
             width: 33.33%;
             margin-top: 19.5%;
             font-weight: 700;
@@ -171,9 +166,8 @@
           }
 
           .week-area {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter;
+
             width: 33.33%;
             aspect-ratio: 1 / 1;
 
@@ -187,9 +181,7 @@
           }
 
           .image-area {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter;
             width: 66.66%;
             background: $primary-color1;
 
@@ -229,9 +221,7 @@
 
         // 중앙
         .header-center {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flexCenter;
           width: 25%;
           transform: translateX(16%);
 
@@ -263,9 +253,7 @@
           width: 28.6%;
 
           .header-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter;
             width: 25%;
             height: 25%;
             aspect-ratio: 1 / 1;
@@ -312,9 +300,7 @@
           }
 
           .analog-clock {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter;
             width: 50%;
             aspect-ratio: 1 / 1;
             background-color: $primary-color1;
@@ -393,9 +379,7 @@
           }
 
           .digital-clock-pc {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter;
             width: 25%;
             height: fit-content;
             aspect-ratio: 1 / 1;
@@ -564,9 +548,7 @@
             justify-content: space-between;
 
             .digital-clock-sp {
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              @include flexCenter;
               width: 25%;
               height: fit-content;
               background-color: $primary-color1;
@@ -595,9 +577,7 @@
             border: 1px solid $border-color1;
 
             .header-nav-sp__a {
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              @include flexCenter;
               width: 25%;
               padding: 4.5% 0;
               text-align: center;

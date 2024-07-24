@@ -91,9 +91,7 @@
 
               li.page-item {
                 cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flexCenter;
                 list-style: none;
                 width: calc(100% / 8);
                 aspect-ratio: 1 / 1;

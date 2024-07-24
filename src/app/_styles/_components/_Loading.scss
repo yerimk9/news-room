@@ -1,8 +1,5 @@
 .loading-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex(center, center, column);
   gap: 2rem;
 
   position: absolute;

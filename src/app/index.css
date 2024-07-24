@@ -247,9 +247,9 @@ a {
   top: 0;
   left: 0;
   z-index: 8;
-  display: block;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 0;
   padding: 0;
@@ -357,9 +357,9 @@ a {
 }
 .video-container .border-container .content-container header .header-left .date-area {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 33.33%;
   margin-top: 19.5%;
   font-weight: 700;
@@ -382,8 +382,8 @@ a {
 }
 .video-container .border-container .content-container header .header-left .week-area {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 33.33%;
   aspect-ratio: 1/1;
 }
@@ -396,8 +396,8 @@ a {
 }
 .video-container .border-container .content-container header .header-left .image-area {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 66.66%;
   background: #edebeb;
 }
@@ -429,8 +429,8 @@ a {
 }
 .video-container .border-container .content-container header .header-center {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 25%;
   transform: translateX(16%);
   position: relative;
@@ -458,8 +458,8 @@ a {
 }
 .video-container .border-container .content-container header .header-right .header-icon {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 25%;
   height: 25%;
   aspect-ratio: 1/1;
@@ -500,8 +500,8 @@ a {
 }
 .video-container .border-container .content-container header .header-right .analog-clock {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 50%;
   aspect-ratio: 1/1;
   background-color: #edebeb;
@@ -570,8 +570,8 @@ a {
 }
 .video-container .border-container .content-container header .header-right .digital-clock-pc {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 25%;
   height: fit-content;
   aspect-ratio: 1/1;
@@ -700,8 +700,8 @@ a {
   }
   .video-container .border-container .content-container header .header-right .digital-clock-sp {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 25%;
     height: fit-content;
     background-color: #edebeb;
@@ -728,8 +728,8 @@ a {
   }
   .video-container .border-container .content-container header .header-nav-sp .header-nav-sp__a {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 25%;
     padding: 4.5% 0;
     text-align: center;
@@ -888,9 +888,9 @@ a {
   position: fixed;
   top: 0;
   z-index: 8;
-  display: block;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 0;
   padding: 0;
@@ -1186,8 +1186,8 @@ a {
 .video-container .border-container .content-container main .main-center .pagination ul.pagination li.page-item {
   cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   list-style: none;
   width: 12.5%;
   aspect-ratio: 1/1;
@@ -1430,21 +1430,6 @@ a {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  /*       &::before {
-    position: absolute;
-    top: -30px;
-    right: -54px;
-    z-index: 1;
-    content: url("https://q.livesense.co.jp/images/common/frog_before.png");
-  }
-
-  &::after {
-    position: absolute;
-    bottom: -52px;
-    left: -50px;
-    z-index: 1;
-    content: url("https://q.livesense.co.jp/images/common/frog_after.png");
-  } */
 }
 .modal .modal__middle .modal__inner .modal__content {
   position: relative;
@@ -1534,8 +1519,8 @@ a {
 }
 .loading-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
   position: absolute;
