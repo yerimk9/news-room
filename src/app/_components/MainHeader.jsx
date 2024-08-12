@@ -234,18 +234,12 @@ function MainHeader() {
             <span>NEWS LIST</span>
           </p>
         </Link>
-        <Link
-          className="header-nav-sp__a"
-          href="https://www.livesense.co.jp/contact/"
-        >
+        <Link className="header-nav-sp__a" href="/">
           <p className="header-nav-sp__text">
             <span>Message</span>
           </p>
         </Link>
-        <Link
-          className="header-nav-sp__a"
-          href="https://suzuri.jp/Q_by_Livesense"
-        >
+        <Link className="header-nav-sp__a" href="/">
           <p className="header-nav-sp__text">
             <span>좋은</span>
           </p>
