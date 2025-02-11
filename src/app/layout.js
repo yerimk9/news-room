@@ -1,4 +1,4 @@
-import GoogleAnalytics from "./_components/GoogleAnalytics";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import "./index.css";
 
