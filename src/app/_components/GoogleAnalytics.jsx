@@ -9,7 +9,6 @@ export default function GoogleAnalytics({ gaId }) {
 				?id=${gaId}`}
       />
       <Script
-        id="google-analytics"
         dangerouslySetInnerHTML={{
           __html: `
 		window.dataLayer = window.dataLayer || [];
